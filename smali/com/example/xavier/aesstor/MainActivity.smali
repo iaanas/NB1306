@@ -274,48 +274,6 @@
 
     if-eqz v7, :cond_0
 
-    .line 32
-    new-instance v7, Landroid/support/v7/app/AlertDialog$Builder;
-
-    invoke-direct {v7, p0}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
-
-    const-string v8, "Error"
-
-    .line 33
-    invoke-virtual {v7, v8}, Landroid/support/v7/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/support/v7/app/AlertDialog$Builder;
-
-    move-result-object v7
-
-    const-string v8, "Some error during loading process"
-
-    .line 34
-    invoke-virtual {v7, v8}, Landroid/support/v7/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/support/v7/app/AlertDialog$Builder;
-
-    move-result-object v7
-
-    const v8, 0x1040013
-
-    new-instance v9, Lcom/example/xavier/aesstor/MainActivity$1;
-
-    invoke-direct {v9, p0}, Lcom/example/xavier/aesstor/MainActivity$1;-><init>(Lcom/example/xavier/aesstor/MainActivity;)V
-
-    .line 35
-    invoke-virtual {v7, v8, v9}, Landroid/support/v7/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/support/v7/app/AlertDialog$Builder;
-
-    move-result-object v7
-
-    const v8, 0x1080027
-
-    .line 41
-    invoke-virtual {v7, v8}, Landroid/support/v7/app/AlertDialog$Builder;->setIcon(I)Landroid/support/v7/app/AlertDialog$Builder;
-
-    move-result-object v7
-
-    .line 42
-    invoke-virtual {v7}, Landroid/support/v7/app/AlertDialog$Builder;->show()Landroid/support/v7/app/AlertDialog;
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 52
     .end local v2    # "ze":Ljava/util/zip/ZipEntry;
