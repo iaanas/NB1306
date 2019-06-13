@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/listbackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:cacheColorHint="@android:color/transparent" android:dividerHeight="10.0dip" android:choiceMode="multipleChoice" android:layout_weight="1.0" />
+    <TextView android:gravity="center" android:id="@android:id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/empty" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="23.0dip" android:paddingTop="5.0dip" android:paddingRight="1.0dip" android:paddingBottom="31.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/encryptButton" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:src="@drawable/umbrella" />
+        <ImageButton android:id="@id/decryptButton" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:src="@drawable/vision" />
+        <ImageButton android:id="@id/deleteDecryptedButton" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:src="@drawable/folder" />
+        <ImageButton android:id="@id/resetPasswd" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:src="@drawable/reset_passwd" />
+    </LinearLayout>
+</LinearLayout>

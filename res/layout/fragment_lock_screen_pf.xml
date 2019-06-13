@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fragment_pf" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:theme="@style/PFLockScreenStyle" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?pf_lock_screen" />
+    <LinearLayout android:orientation="vertical" android:paddingBottom="60.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lock_screen_title_pf" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+        <com.beautycoder.pflockscreen.views.PFCodeView android:layout_gravity="center_horizontal" android:id="@id/code_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_1" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="1" style="?pf_key_button" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_2" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="2" style="?pf_key_button" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_3" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="3" style="?pf_key_button" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_4" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="4" style="?pf_key_button" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_5" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="5" style="?pf_key_button" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_6" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="6" style="?pf_key_button" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_7" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="7" style="?pf_key_button" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_8" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="8" style="?pf_key_button" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_9" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="9" style="?pf_key_button" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/button_left" android:background="@drawable/side_button_background_pf" android:focusable="true" android:clickable="true" android:layout_width="70.0dip" android:layout_height="70.0dip" android:text="@string/forgot_pf" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:theme="@style/PFLockScreenButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_0" android:layout_width="@dimen/button_lock_screen_fp_size" android:layout_height="@dimen/button_lock_screen_fp_size" android:text="0" style="?pf_key_button" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/button_right" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:text="" />
+                <ImageView android:theme="@style/PFLockScreenDeleteButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_delete" android:background="@drawable/side_button_background_pf" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" android:text="fp" style="?pf_delete_button" />
+                <ImageView android:theme="@style/PFLockScreenFingerPrintButtonStyle" android:gravity="center" android:layout_gravity="center" android:id="@id/button_finger_print" android:background="@drawable/side_button_background_pf" android:layout_width="70.0dip" android:layout_height="70.0dip" android:text="fp" style="?pf_fingerprint_button" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="18.0dip" android:textColor="#99ffffff" android:id="@id/button_next" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/next_pf" />
+    </LinearLayout>
+</RelativeLayout>
